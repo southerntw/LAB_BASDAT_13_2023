@@ -1,0 +1,13 @@
+USE library;
+CREATE TABLE books (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	isbn VARCHAR(50) UNIQUE,
+	title VARCHAR(50) NOT NULL,
+	pages INT,
+	summary TEXT,
+	genre VARCHAR(50) NOT NULL 
+);
+-- ALTER TABLE books MODIFY isbn CHAR(13) NOT NULL;
+-- ALTER TABLE books DROP COLUMN summary;
+SHOW TABLE;
+DESCRIBE books;
